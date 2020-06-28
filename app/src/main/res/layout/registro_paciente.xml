@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="4dip">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="1dip">
+
+
+        <ImageView
+            android:id="@+id/logoDr_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="350dp"
+            app:srcCompat="@drawable/logo_drtv" />
+
+        <TextView
+            android:id="@+id/TVITEM_FECHA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVITEM_DNI_PACIENTE"
+            android:layout_marginStart="220dip"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="1dp"
+            android:text="TVITEM_FECHA" />
+
+        <TextView
+            android:id="@+id/TVITEM_NOMBRE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginStart="60dip"
+            android:layout_alignBaseline="@id/TVITEM_FECHA"
+            android:layout_alignBottom="@id/TVITEM_NOMBRE"
+            android:text="TVITEM_NOMBRE"
+            />
+
+        <TextView
+            android:id="@+id/TVITEM_DNI_PACIENTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dip"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="1dp"
+            android:text="TVITEM_DNI_PACIENTE" />
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
